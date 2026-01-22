@@ -1,5 +1,3 @@
-<img width="562" height="953" alt="image" src="https://github.com/user-attachments/assets/07fe939c-b5d1-44cf-89ee-3e615dc28089" />
-
 # 🛡️ 187-Day SOC Analyst Transformation & Dissertation Labs
 
 ## 📊 Progress Tracker
