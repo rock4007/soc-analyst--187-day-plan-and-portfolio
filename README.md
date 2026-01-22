@@ -1,11 +1,11 @@
-# 🛡️ 187-Day SOC Analyst Transformation & Dissertation Labs
+<img width="562" height="953" alt="image" src="https://github.com/user-attachments/assets/07fe939c-b5d1-44cf-89ee-3e615dc28089" /># 🛡️ 187-Day SOC Analyst Transformation & Dissertation Labs
 
 ## 📊 Progress Tracker
 This table tracks my daily technical growth and laboratory evidence for my university dissertation.
 
 | Day | Date | Focus Area | Key Accomplishment | Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| **001** | 22 Jan 2026 | Environment Setup | Established GitHub HQ & Network Baseline | [View Lab Docs](#) |
+| *001* | 22 Jan 2026 | Environment Setup | Established GitHub HQ & Network Baseline | [View Lab Docs](Screenshot%202026-01-22%20160611.png) |
 | **002** | 23 Jan 2026 | Networking | TCP/IP Deep Dive & Packet Analysis | Pending |
 | **003** | 24 Jan 2026 | Networking | Port Scanning & Firewall Logic | Pending |
 
