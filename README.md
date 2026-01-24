@@ -39,6 +39,57 @@ During the `tracert` lab, I observed the packet path taking 19 hops to reach the
 
 Jan 23 Log:
  Captured and analyzed a TCP 3-way handshake baseline.
+ # 🛡️ SOC Analyst Path: Day 1 - Networking & Cloud Fundamentals
+
+## 📅 Date: January 24, 2026
+
+## 🎯 Learning Objectives
+Today's session focused on bridging the gap between basic networking protocols and how they are applied in a Cloud SOC environment.
+
+---
+
+## 🛠️ Technical Deep Dive
+
+### 1. Networking Protocols & Security
+* **Encrypted vs. Unencrypted:** Analyzed **Port 23 (Telnet)** vs. **Port 22 (SSH)**. Documented that Telnet is a high-risk protocol due to plain-text data transmission.
+* **The TCP 3-Way Handshake:** 1. `SYN` (Synchronize)
+    2. `SYN-ACK` (Acknowledge)
+    3. `ACK` (Finalize)
+* **Attack Recognition (SYN Flood):** Identified how attackers exploit the handshake by leaving connections "half-open" to cause a **Denial of Service (DoS)**.
+
+
+
+### 2. The OSI Model
+* **Layer 3 (Network Layer):** Confirmed that IP filtering and routing happen here.
+* **Layer 4 (Transport Layer):** Identified that Port-based blocking (TCP/UDP) occurs here.
+* **Stateful Inspection:** Learned that modern firewalls are "Stateful," meaning they remember the context of a conversation rather than just looking at individual packets.
+
+[attachment_0](attachment)
+
+### 3. Cloud Security Theory
+* **Shared Responsibility Model:** * **Provider:** Responsible for security *of* the cloud (Hardware/Data Centers).
+    * **Customer (Me):** Responsible for security *in* the cloud (VPC, Security Groups, Data).
+* **Zero Trust & Lateral Movement:** Studied the importance of the **Principle of Least Privilege (PoLP)**. Configured logic to prevent "hopping" from a Web Server to a Database by restricting internal traffic.
+
+
+
+---
+
+## 🧠 Mock Interview Reflection
+* **Scenario:** Massive spike in SYN packets with no ACKs.
+* **Analysis:** This is a SYN Flood attack. The server’s memory/buffer is being exhausted by half-open connections, preventing legitimate traffic from connecting.
+* **Outcome:** Successfully identified the attack and the relevant OSI Layer (Layer 3) for mitigation.
+
+---
+
+## 📈 Next Steps
+* [ ] Study **ICMP** and **ARP** protocols from the PDF (Page 18).
+* [ ] Explore **Packet Sniffing** basics (Wireshark).
+* [ ] Document Day 2 progress.
+*
+
+
+
  Verified SYN/SYN-ACK packet flags using tshark. 
 Secured evidence in the dissertation repository via authenticated PAT push.
 
